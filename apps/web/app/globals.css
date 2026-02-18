@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 240 33% 99%;
+  --fg: 240 20% 14%;
+  --card: 0 0% 100%;
+  --muted: 240 14% 96%;
+  --primary: 247 84% 61%;
+}
+
+.dark {
+  --bg: 240 15% 8%;
+  --fg: 220 33% 96%;
+  --card: 240 13% 12%;
+  --muted: 240 8% 18%;
+  --primary: 252 95% 73%;
+}
+
+body {
+  @apply bg-bg text-fg antialiased;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at 20% 20%, rgba(79,70,229,0.3), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(147,51,234,0.25), transparent 25%);
+}
