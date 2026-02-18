@@ -37,3 +37,13 @@ What is included:
 - PostgreSQL SQL dump if the local docker `postgres` container is running
 
 You can download/share that generated `.tar.gz` file directly.
+
+### Download backup from GitHub
+A GitHub Actions workflow is included at `.github/workflows/backup.yml`.
+
+1. Push your branch to GitHub.
+2. Open **Actions** → **Backup Archive**.
+3. Click **Run workflow** (or use a push to `main`).
+4. Open the workflow run and download the `autriders-backup-<run_number>` artifact.
+
+This artifact contains the generated `backups/autriders-backup-*.tar.gz` file.
