@@ -23,3 +23,17 @@ Production-ready full-stack SaaS starter for **Autriders** (autriders.com), buil
 - **Company:** Kavagie Smarttech Private Limited
 - **Address:** 9 D Kewal Vihar, Dehradun, Uttarakhand, India - 248001
 - **Support:** support@autriders.com
+
+## Backup and download
+Run the following command to create a downloadable backup archive:
+
+- `npm run backup`
+
+This generates a file inside `backups/` like:
+- `backups/autriders-backup-YYYYMMDD-HHMMSS.tar.gz`
+
+What is included:
+- Project source snapshot (excluding `.git`, `node_modules`, build artifacts, and previous backups)
+- PostgreSQL SQL dump if the local docker `postgres` container is running
+
+You can download/share that generated `.tar.gz` file directly.
